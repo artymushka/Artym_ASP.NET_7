@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Data Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 50px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        p {
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to Data Page</h1>
+    <h2>Generate Data</h2>
+
+    <form asp-controller="Data" asp-action="GenerateData" method="post">
+        <div>
+            <label for="customName">Raw1</label>
+            <input type="text" id="customName" name="Raw1" />
+        </div>
+        <div>
+            <label for="customContent">Raw2</label>
+            <input type="text" id="customContent" name="Raw2" />
+        </div>
+        <div>
+            <label for="customFileName">FileName</label>
+            <input type="text" id="customFileName" name="FileName" />
+        </div>
+        <button type="submit">Download File</button>
+    </form>
+</body>
+</html>
+
